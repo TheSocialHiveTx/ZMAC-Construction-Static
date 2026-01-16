@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const header = document.querySelector('header');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 10) {
-            header.classList.add('bg-white/90', 'backdrop-blur-md', 'border-b', 'border-black/5', 'py-3');
+            header.classList.add('bg-zinc-900/95', 'backdrop-blur-md', 'border-b', 'border-white/10', 'py-3', 'shadow-2xl');
             header.classList.remove('bg-transparent', 'py-6');
         } else {
-            header.classList.remove('bg-white/90', 'backdrop-blur-md', 'border-b', 'border-black/5', 'py-3');
+            header.classList.remove('bg-zinc-900/95', 'backdrop-blur-md', 'border-b', 'border-white/10', 'py-3', 'shadow-2xl');
             header.classList.add('bg-transparent', 'py-6');
         }
     });
