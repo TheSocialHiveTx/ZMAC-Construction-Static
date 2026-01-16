@@ -11,33 +11,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #000000;
-            background-color: #ffffff;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Space+Grotesk', sans-serif;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-        }
-
         .modern-gradient {
             background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
-        }
-
-        .text-outline {
-            -webkit-text-stroke: 1px black;
-            color: transparent;
         }
     </style>
     <script>
@@ -110,60 +88,75 @@
         </div>
     </header>
 
-    <main>
-        <div class="pt-32 pb-40 bg-black text-white">
-            <div class="container mx-auto px-6">
-                <h1 class="text-7xl md:text-9xl font-black uppercase tracking-tighter text-center mb-32">Verdict<span
-                        class="text-primaryAccent">.</span></h1>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-                    <!-- Review 1 -->
-                    <div class="border-t border-white/20 pt-8 space-y-8">
-                        <div class="flex gap-1">
-                            <!-- 5 Stars -->
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                        </div>
-                        <p class="text-xl font-medium leading-relaxed">"ZMAC responded within 2 hours after a massive
-                            hail storm. They tarped my roof and helped me through the entire insurance process."</p>
-                        <p class="font-black uppercase tracking-widest text-xs text-primaryAccent">John Miller / 2
-                            months ago</p>
-                    </div>
-                    <!-- Review 2 -->
-                    <div class="border-t border-white/20 pt-8 space-y-8">
-                        <div class="flex gap-1">
-                            <!-- 5 Stars -->
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                        </div>
-                        <p class="text-xl font-medium leading-relaxed">"Professional, clean, and fast. The new shingles
-                            look amazing. Highly recommend their residential team!"</p>
-                        <p class="font-black uppercase tracking-widest text-xs text-primaryAccent">Sarah Jenkins / 1
-                            month ago</p>
-                    </div>
-                    <!-- Review 3 -->
-                    <div class="border-t border-white/20 pt-8 space-y-8">
-                        <div class="flex gap-1">
-                            <!-- 4 Stars -->
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="#FFD700" stroke="#FFD700"></i>
-                            <i data-lucide="star" class="w-3.5 h-3.5" fill="none" stroke="currentColor"></i>
-                        </div>
-                        <p class="text-xl font-medium leading-relaxed">"Great communication. They found a leak three
-                            other companies missed. Price was fair and competitive."</p>
-                        <p class="font-black uppercase tracking-widest text-xs text-primaryAccent">Robert Chen / 3 weeks
-                            ago</p>
-                    </div>
+    <main class="bg-black">
+        <!-- IMMERSIVE HERO -->
+        <section class="relative h-[70vh] flex items-center overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=2000"
+                    class="w-full h-full object-cover scale-110 animate-slow-zoom" alt="Happy Home" />
+                <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl space-y-12">
+                    <span
+                        class="inline-block bg-primaryAccent px-4 py-2 text-xs font-black uppercase tracking-[0.4em] text-black animate-in fade-in slide-in-from-left duration-1000">
+                        The Verdict
+                    </span>
+                    <h1
+                        class="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-white animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
+                        Proven<br />Service<span class="text-primaryAccent">.</span>
+                    </h1>
+                    <p
+                        class="text-2xl md:text-3xl text-gray-300 font-medium max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
+                        Don't just take our word for it. Hear from your neighbors in Lakewood who have experienced the
+                        ZMAC
+                        standard of precision first-hand.
+                    </p>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- REVIEWS GRID -->
+        <section class="py-40 bg-zinc-950">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Review 1 -->
+                    <div
+                        class="glass-card p-16 rounded-[4rem] flex flex-col justify-between space-y-12 group hover:bg-white/10 transition-all duration-500">
+                        <div class="space-y-8">
+                            <div class="flex gap-1 text-primaryAccent">
+                                <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+                            </div>
+                            <p class="text-3xl font-black uppercase tracking-tight text-white leading-tight">
+                                "The most professional crew I've ever hired. They stopped the leak in 2 hours and
+                                replaced the entire roof next week."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center font-black text-2xl text-white">
+                                S</div>
+                            <div>
+                                <h4 class="text-white font-black uppercase tracking-widest text-xs">Sarah Johnson</h4>
+                                <p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">Belmar Resident
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 2 -->
+                    other companies missed. Price was fair and competitive."</p>
+                    <p class="font-black uppercase tracking-widest text-xs text-primaryAccent">Robert Chen / 3 weeks
+                        ago</p>
+                </div>
+            </div>
+            </div>
+            </div>
     </main>
 
     <!-- FOOTER -->

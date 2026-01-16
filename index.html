@@ -11,33 +11,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
   <script src="https://unpkg.com/lucide@latest"></script>
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      color: #000000;
-      background-color: #ffffff;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: 'Space+Grotesk', sans-serif;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
     .modern-gradient {
       background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
-    }
-
-    .text-outline {
-      -webkit-text-stroke: 1px black;
-      color: transparent;
     }
   </style>
   <script>
@@ -107,147 +85,131 @@
     </div>
   </header>
 
-  <main>
-    <!-- Minimalist Hero Section -->
-    <section class="relative min-h-[90vh] flex items-center pt-24 overflow-hidden bg-black text-white">
-      <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div class="space-y-8 z-10 animate-in fade-in slide-in-from-bottom duration-1000">
-          <div
-            class="inline-block bg-primaryAccent px-4 py-1 text-[10px] font-black uppercase tracking-[0.3em] text-black">
-            24/7 Reliable Service
-          </div>
-          <h1 class="text-6xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-white">
-            Roofing<br />Reinvented<span class="text-primaryAccent">.</span>
+  <main class="bg-black">
+    <!-- IMMERSIVE HERO -->
+    <section class="relative h-[95vh] flex items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=2000"
+          class="w-full h-full object-cover scale-110 animate-slow-zoom" alt="ZMAC Roofing Excellence" />
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90"></div>
+      </div>
+
+      <div class="container mx-auto px-6 relative z-10">
+        <div class="max-w-4xl space-y-12">
+          <span
+            class="inline-block bg-primaryAccent px-6 py-2 text-xs font-black uppercase tracking-[0.4em] text-black animate-in fade-in slide-in-from-left duration-1000">
+            Lakewood's Elite
+          </span>
+          <h1
+            class="text-7xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.8] text-white animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
+            Peak<br />Protection<span class="text-primaryAccent">.</span>
           </h1>
-          <p class="text-xl text-gray-400 font-medium leading-relaxed max-w-lg">
-            High-performance roofing solutions delivered with speed, precision, and zero compromise.
+          <p
+            class="text-2xl md:text-3xl text-gray-300 font-medium max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
+            Zero compromise. Zero stress. We provide the most reliable roofing services in Colorado with a lifetime of
+            integrity built into every shingle.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 pt-4">
-            <a href="tel:(303) 882-3385"
-              class="bg-white text-black px-10 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-primaryAccent hover:text-black transition-all shadow-xl flex items-center justify-center gap-3">
-              Request Immediate Help
-            </a>
+          <div class="flex flex-wrap gap-6 pt-4 animate-in fade-in slide-in-from-bottom duration-1000 delay-700">
             <a href="contact.html"
-              class="bg-transparent text-white border-2 border-white px-10 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3">
-              Get a Quote <i data-lucide="arrow-right" class="w-4.5 h-4.5"></i>
+              class="bg-white text-black px-10 py-5 rounded-full font-black text-xs uppercase tracking-widest hover:bg-primaryAccent transition-all shadow-2xl">
+              Start Your Project
+            </a>
+            <a href="emergency.html"
+              class="bg-transparent border border-white/20 text-white px-10 py-5 rounded-full font-black text-xs uppercase tracking-widest hover:border-white transition-all backdrop-blur-md">
+              Emergency Help
             </a>
           </div>
         </div>
-        <div class="relative group">
-          <div
-            class="absolute inset-0 bg-primaryAccent translate-x-6 translate-y-6 -z-10 group-hover:translate-x-4 group-hover:translate-y-4 transition-all opacity-20">
-          </div>
-          <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=1000"
-            alt="Modern Roof"
-            class="w-full h-[600px] object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700 shadow-2xl ring-1 ring-white/10" />
-        </div>
       </div>
     </section>
 
-    <!-- Big Typography Section -->
-    <section class="py-32 bg-black text-white">
-      <div class="container mx-auto px-6 text-center">
-        <h2 class="text-5xl md:text-7xl font-black uppercase leading-tight mb-12">
-          Your home deserves <span class="text-outline">protection</span> without the <span
-            class="text-primaryAccent">hassle.</span>
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-left max-w-5xl mx-auto pt-12">
-          <div class="space-y-4">
-            <h3 class="text-primaryAccent text-2xl font-black uppercase">Elite Status</h3>
-            <p class="text-gray-400 font-medium">Licensed, insured, and certified by GAF for your ultimate peace of
-              mind.</p>
-          </div>
-          <div class="space-y-4">
-            <h3 class="text-primaryAccent text-2xl font-black uppercase">Zero Waste</h3>
-            <p class="text-gray-400 font-medium">Clean, professional job sites. We respect your property like it's our
-              own.</p>
-          </div>
-          <div class="space-y-4">
-            <h3 class="text-primaryAccent text-2xl font-black uppercase">Instant Fix</h3>
-            <p class="text-gray-400 font-medium">Why wait? Our emergency team stabilizes damage within hours, not days.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Spacious Services Section -->
-    <section class="py-40 bg-white">
+    <!-- MISSION SECTION -->
+    <section class="py-40 border-b border-white/5 bg-zinc-950">
       <div class="container mx-auto px-6">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
-          <div class="space-y-4">
-            <span class="text-primaryAccent font-black uppercase tracking-widest text-xs">Capabilities</span>
-            <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter">Superior Craft<span
-                class="text-primaryAccent">.</span></h2>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-24 items-center">
+          <div class="lg:col-span-6 space-y-12">
+            <div class="space-y-4">
+              <span class="text-primaryAccent font-black uppercase tracking-[0.3em] text-xs">Our Commitment</span>
+              <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter text-white leading-none">
+                Elite<br />Craftsmanship<span class="text-primaryAccent">.</span>
+              </h2>
+            </div>
+            <p class="text-xl text-gray-400 font-medium leading-relaxed max-w-xl">
+              We started ZMAC with one goal: to eliminate the headaches of home improvement. In Lakewood, we’re known
+              for more than just roofs—we’re known for a level of precision that turns a repair into a masterpiece.
+            </p>
+            <div class="grid grid-cols-2 gap-8">
+              <div class="space-y-2">
+                <span class="text-4xl font-black text-white">100%</span>
+                <p class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Zero Leak Guarantee</p>
+              </div>
+              <div class="space-y-2">
+                <span class="text-4xl font-black text-white">24/7</span>
+                <p class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Rapid Response Arrival</p>
+              </div>
+            </div>
           </div>
-          <p class="max-w-md text-gray-400 font-medium text-lg">From minor repairs to complete commercial
-            transformations, we execute with elite standard.</p>
+          <div class="lg:col-span-6 relative group overflow-hidden rounded-[4rem]">
+            <img src="https://images.unsplash.com/photo-1449156001931-82992a47279f?auto=format&fit=crop&q=80&w=1500"
+              class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-110"
+              alt="Elite Craft" />
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IMMERSIVE SERVICES -->
+    <section class="py-40">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-32 space-y-4">
+          <span class="text-primaryAccent font-black uppercase tracking-[0.4em] text-xs">Technical Mastery</span>
+          <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter text-white">Superior Systems<span
+              class="text-primaryAccent">.</span></h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-100">
-          <!-- Service 1 -->
-          <div class="bg-white p-16 hover:bg-black hover:text-white transition-all group cursor-pointer"
-            onclick="openServiceModal('emergency')">
-            <div
-              class="text-black group-hover:text-primaryAccent mb-10 group-hover:scale-110 transition-all duration-500">
-              <i data-lucide="zap" class="w-12 h-12"></i>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Card 1 -->
+          <div onclick="openServiceModal('replacement')"
+            class="group relative h-[600px] rounded-[3rem] overflow-hidden cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&q=80&w=1200"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              alt="Full Replacement" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+            <div class="absolute bottom-12 left-12 right-12 space-y-6">
+              <span class="text-primaryAccent font-black uppercase tracking-[0.3em] text-[10px]">Restoration</span>
+              <h3 class="text-4xl font-black uppercase text-white tracking-widest">Full Replacement</h3>
+              <p
+                class="text-gray-300 text-sm leading-relaxed max-w-sm opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                Complete architectural overhauls with Class-4 impact resistant systems that withstand everything
+                Colorado throws at your home.
+              </p>
+              <div class="flex items-center gap-4 text-white font-black uppercase text-[10px] tracking-[0.3em]">
+                Explore System <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </div>
             </div>
-            <h3 class="text-3xl font-black uppercase mb-4">Emergency Repair</h3>
-            <p class="text-gray-500 group-hover:text-gray-400 text-lg leading-relaxed mb-8">Immediate response for
-              leaks, storm damage, and
-              structural hazards.</p>
-            <button
-              class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
-              Details <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-            </button>
           </div>
-          <!-- Service 2 -->
-          <div class="bg-white p-16 hover:bg-black hover:text-white transition-all group cursor-pointer"
-            onclick="openServiceModal('replacement')">
-            <div
-              class="text-black group-hover:text-primaryAccent mb-10 group-hover:scale-110 transition-all duration-500">
-              <i data-lucide="home" class="w-12 h-12"></i>
+
+          <!-- Card 2 -->
+          <div onclick="openServiceModal('emergency')"
+            class="group relative h-[600px] rounded-[3rem] overflow-hidden cursor-pointer">
+            <img src="https://images.unsplash.com/photo-1595113316349-9fa4ee24f884?auto=format&fit=crop&q=80&w=1200"
+              class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              alt="Emergency Help" />
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
+            <div class="absolute bottom-12 left-12 right-12 space-y-6">
+              <span class="text-primaryAccent font-black uppercase tracking-[0.3em] text-[10px]">Crisis
+                Resolution</span>
+              <h3 class="text-4xl font-black uppercase text-white tracking-widest">Emergency Repair</h3>
+              <p
+                class="text-gray-300 text-sm leading-relaxed max-w-sm opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                Immediate stabilization for active leaks, storm damage, and structural hazards. We respond while others
+                are still checking their calendars.
+              </p>
+              <div class="flex items-center gap-4 text-white font-black uppercase text-[10px] tracking-[0.3em]">
+                Request Response <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </div>
             </div>
-            <h3 class="text-3xl font-black uppercase mb-4">Full Replacement</h3>
-            <p class="text-gray-500 group-hover:text-gray-400 text-lg leading-relaxed mb-8">Complete roof overhauls with
-              premium shingles and
-              expert craftsmanship.</p>
-            <button
-              class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
-              Details <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-            </button>
-          </div>
-          <!-- Service 3 -->
-          <div class="bg-white p-16 hover:bg-black hover:text-white transition-all group cursor-pointer"
-            onclick="openServiceModal('leak')">
-            <div
-              class="text-black group-hover:text-primaryAccent mb-10 group-hover:scale-110 transition-all duration-500">
-              <i data-lucide="droplets" class="w-12 h-12"></i>
-            </div>
-            <h3 class="text-3xl font-black uppercase mb-4">Leak Detection</h3>
-            <p class="text-gray-500 group-hover:text-gray-400 text-lg leading-relaxed mb-8">Advanced moisture detection
-              and precision sealing to
-              stop damage fast.</p>
-            <button
-              class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
-              Details <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-            </button>
-          </div>
-          <!-- Service 4 -->
-          <div class="bg-white p-16 hover:bg-black hover:text-white transition-all group cursor-pointer"
-            onclick="openServiceModal('drone')">
-            <div
-              class="text-black group-hover:text-primaryAccent mb-10 group-hover:scale-110 transition-all duration-500">
-              <i data-lucide="search" class="w-12 h-12"></i>
-            </div>
-            <h3 class="text-3xl font-black uppercase mb-4">Drone Inspections</h3>
-            <p class="text-gray-500 group-hover:text-gray-400 text-lg leading-relaxed mb-8">High-tech damage assessment
-              for accurate insurance
-              claims.</p>
-            <button
-              class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
-              Details <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-            </button>
           </div>
         </div>
       </div>

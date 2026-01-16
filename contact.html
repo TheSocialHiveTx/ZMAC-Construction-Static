@@ -11,33 +11,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #000000;
-            background-color: #ffffff;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Space+Grotesk', sans-serif;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-        }
-
         .modern-gradient {
             background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
-        }
-
-        .text-outline {
-            -webkit-text-stroke: 1px black;
-            color: transparent;
         }
     </style>
     <script>
@@ -110,102 +88,107 @@
         </div>
     </header>
 
-    <main>
-        <div class="pt-32 pb-40 bg-black text-white">
-            <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-24">
-                <div class="space-y-12">
-                    <h1 class="text-7xl md:text-9xl font-black uppercase tracking-tighter text-white">Talk<span
-                            class="text-primaryAccent">.</span></h1>
-                    <p class="text-2xl text-gray-400 font-medium">Ready to start? We're on standby 24/7. Reach out via
-                        the form or hit the direct line.</p>
-                    <div class="space-y-8">
-                        <div>
-                            <p class="text-xs font-black uppercase tracking-widest text-gray-400 mb-2">Direct Line</p>
-                            <p class="text-4xl font-black text-white">(303) 882-3385</p>
+    <main class="bg-black">
+        <!-- IMMERSIVE HERO -->
+        <section class="relative h-[60vh] flex items-center overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1541913056027-5981d24e4c0a?auto=format&fit=crop&q=80&w=2000"
+                    class="w-full h-full object-cover scale-110 animate-slow-zoom" alt="ZMAC Office" />
+                <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <div class="max-w-4xl mx-auto space-y-12">
+                    <span
+                        class="inline-block bg-primaryAccent px-4 py-2 text-xs font-black uppercase tracking-[0.4em] text-black animate-in fade-in slide-in-from-left duration-1000">
+                        Get In Touch
+                    </span>
+                    <h1
+                        class="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-white animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
+                        Start Now<span class="text-primaryAccent">.</span>
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="py-40 bg-zinc-950">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-24">
+                    <div class="lg:col-span-5 space-y-12">
+                        <div class="space-y-4">
+                            <span class="text-primaryAccent font-black uppercase tracking-[0.3em] text-xs">Lakewood
+                                HQ</span>
+                            <h2
+                                class="text-6xl md:text-8xl font-black uppercase tracking-tighter text-white leading-none">
+                                Direct<br />Lines<span class="text-primaryAccent">.</span></h2>
                         </div>
-                        <div>
-                            <p class="text-xs font-black uppercase tracking-widest text-gray-400 mb-2">Email</p>
-                            <p class="text-xl font-bold text-white underline decoration-primaryAccent decoration-4">
-                                info@zmacconstruction.com</p>
-                        </div>
-                        <div>
-                            <p class="text-xs font-black uppercase tracking-widest text-gray-400 mb-2">Location</p>
-                            <p class="text-xl font-bold text-white">2103 S Wadsworth Blvd Suite #103, Lakewood, CO 80227
-                            </p>
+                        <div class="space-y-12">
+                            <div class="flex gap-8 group">
+                                <div
+                                    class="w-16 h-16 rounded-2xl glass-card flex items-center justify-center text-primaryAccent group-hover:scale-110 transition-transform">
+                                    <i data-lucide="phone" class="w-8 h-8"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-black uppercase tracking-widest text-gray-500 mb-2">Phone
+                                    </p>
+                                    <p class="text-3xl font-black text-white">(303) 882-3385</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-8 group">
+                                <div
+                                    class="w-16 h-16 rounded-2xl glass-card flex items-center justify-center text-primaryAccent group-hover:scale-110 transition-transform">
+                                    <i data-lucide="map-pin" class="w-8 h-8"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[10px] font-black uppercase tracking-widest text-gray-500 mb-2">
+                                        Office</p>
+                                    <p class="text-xl font-bold text-gray-300 leading-relaxed">2103 S Wadsworth Blvd
+                                        Suite #103,<br />Lakewood, CO 80227</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="bg-softGray p-12 rounded-3xl">
-                    <!-- Contact Form Component -->
-                    <div id="form-content" class="p-4 md:p-8">
-                        <h3 class="text-3xl font-black uppercase tracking-tighter mb-10">Request Help<span
-                                class="text-primaryAccent">.</span></h3>
-                        <form id="contact-form" class="space-y-8">
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+
+                    <div class="lg:col-span-7 bg-white p-12 md:p-20 rounded-[4rem]">
+                        <form class="space-y-8">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                                 <div class="space-y-2">
-                                    <label
-                                        class="text-[10px] font-black uppercase tracking-widest text-gray-400">Name</label>
-                                    <input required type="text"
-                                        class="w-full bg-white border-2 border-gray-200 focus:border-primaryAccent rounded-lg py-4 px-4 font-bold text-black outline-none transition-all placeholder:text-gray-300 shadow-sm"
-                                        placeholder="Full Name" />
+                                    <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Full
+                                        Name</label>
+                                    <input type="text"
+                                        class="w-full bg-softGray border-2 border-transparent focus:border-black p-6 rounded-2xl text-black font-bold outline-none transition-all"
+                                        placeholder="John Doe" required />
                                 </div>
                                 <div class="space-y-2">
                                     <label
-                                        class="text-[10px] font-black uppercase tracking-widest text-gray-400">Phone</label>
-                                    <input required type="tel"
-                                        class="w-full bg-white border-2 border-gray-200 focus:border-primaryAccent rounded-lg py-4 px-4 font-bold text-black outline-none transition-all placeholder:text-gray-300 shadow-sm"
-                                        placeholder="(000) 000-0000" />
+                                        class="text-[10px] font-black uppercase tracking-widest text-gray-400">Project
+                                        Type</label>
+                                    <select
+                                        class="w-full bg-softGray border-2 border-transparent focus:border-black p-6 rounded-2xl text-black font-bold outline-none transition-all appearance-none cursor-pointer">
+                                        <option>Roof Replacement</option>
+                                        <option>Emergency Repair</option>
+                                        <option>Commercial Audit</option>
+                                        <option>Construction Services</option>
+                                    </select>
                                 </div>
                             </div>
-
                             <div class="space-y-2">
                                 <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Project
-                                    Type</label>
-                                <div class="relative">
-                                    <select
-                                        class="w-full bg-white border-2 border-gray-200 focus:border-primaryAccent rounded-lg py-4 px-4 font-bold text-black outline-none cursor-pointer appearance-none shadow-sm">
-                                        <option class="text-black" value="Emergency">Need Help Fast</option>
-                                        <option class="text-black" value="Soon">Planning a Project</option>
-                                        <option class="text-black" value="Low">Request an Estimate</option>
-                                    </select>
-                                    <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
-                                        <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400"></i>
-                                    </div>
-                                </div>
+                                    Details</label>
+                                <textarea rows="6"
+                                    class="w-full bg-softGray border-2 border-transparent focus:border-black p-6 rounded-2xl text-black font-bold outline-none transition-all resize-none"
+                                    placeholder="Tell us about your home and your needs..." required></textarea>
                             </div>
-
-                            <div class="space-y-2">
-                                <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Tell us
-                                    about your project</label>
-                                <textarea rows="4"
-                                    class="w-full bg-white border-2 border-gray-200 focus:border-primaryAccent rounded-lg py-4 px-4 font-bold text-black outline-none transition-all placeholder:text-gray-300 resize-none shadow-sm"
-                                    placeholder="How can we help?"></textarea>
-                            </div>
-
                             <button type="submit"
-                                class="w-full bg-black text-white py-6 rounded-2xl font-black text-xs uppercase tracking-[0.3em] flex items-center justify-center gap-3 hover:bg-primaryAccent hover:text-black transition-all">
-                                SEND REQUEST
+                                class="w-full bg-black text-white py-8 rounded-full font-black uppercase tracking-widest hover:bg-primaryAccent hover:text-black transition-all shadow-2xl">
+                                Send Intelligence Briefing
                             </button>
                         </form>
                     </div>
-
-                    <!-- Success Message -->
-                    <div id="form-success" class="hidden p-12 text-center space-y-6">
-                        <div class="flex justify-center">
-                            <i data-lucide="check-circle-2" class="w-20 h-20 text-black"></i>
-                        </div>
-                        <h3 class="text-4xl font-black uppercase tracking-tighter">Sent.</h3>
-                        <p className="text-lg text-gray-500 font-medium">
-                            We'll call you within 15 minutes.
-                        </p>
-                        <button id="send-another-btn"
-                            class="bg-black text-white px-8 py-3 rounded-full font-black uppercase tracking-widest text-xs">
-                            Send Another
-                        </button>
-                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- FOOTER -->

@@ -11,33 +11,11 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #000000;
-            background-color: #ffffff;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: 'Space+Grotesk', sans-serif;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-        }
-
         .modern-gradient {
             background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
-        }
-
-        .text-outline {
-            -webkit-text-stroke: 1px black;
-            color: transparent;
         }
     </style>
     <script>
@@ -110,139 +88,103 @@
         </div>
     </header>
 
-    <main>
-        <div class="pt-32 pb-40 bg-black text-white">
-            <div class="container mx-auto px-6">
+    <main class="bg-black">
+        <!-- IMMERSIVE HERO -->
+        <section class="relative h-[90vh] flex items-center overflow-hidden">
+            <div class="absolute inset-0">
+                <img src="https://images.unsplash.com/photo-1595113316349-9fa4ee24f884?auto=format&fit=crop&q=80&w=2000"
+                    class="w-full h-full object-cover scale-110 animate-slow-zoom" alt="Emergency Assistance" />
+                <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/90"></div>
+            </div>
+
+            <div class="container mx-auto px-6 relative z-10">
                 <div class="max-w-4xl space-y-12">
                     <span
-                        class="bg-primaryAccent px-4 py-1 text-xs font-black uppercase tracking-widest text-black">Active
-                        Leaks?</span>
-                    <h1 class="text-7xl md:text-9xl font-black uppercase tracking-tighter text-white">Help Now<span
-                            class="text-primaryAccent">.</span></h1>
-                    <p class="text-2xl text-gray-400 font-medium max-w-2xl">Severe weather doesn't wait. Neither do we.
-                        Get your home protected and your family safe with our immediate response team.</p>
+                        class="inline-block bg-primaryAccent px-4 py-2 text-xs font-black uppercase tracking-[0.4em] text-black animate-in fade-in slide-in-from-left duration-1000">
+                        24/7 Rapid Response
+                    </span>
+                    <h1
+                        class="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-white animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
+                        Help Now<span class="text-primaryAccent">.</span>
+                    </h1>
+                    <p
+                        class="text-2xl md:text-3xl text-gray-300 font-medium max-w-2xl leading-relaxed animate-in fade-in slide-in-from-bottom duration-1000 delay-500">
+                        Severe weather doesn't wait for business hours. Our elite stabilization team is ready to deploy
+                        within minutes to protect your home from active damage.
+                    </p>
                 </div>
+            </div>
+        </section>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-24 mt-32">
-                    <div class="space-y-8">
-                        <h2 class="text-4xl font-black uppercase tracking-tight text-white">Rapid Stabilization</h2>
-                        <p class="text-lg text-gray-400 font-medium leading-relaxed">Our first priority is stopping
-                            water ingress. We use heavy-duty industrial tarps and rapid-seal composites to protect your
-                            interiors while we plan the permanent fix.</p>
-                        <ul class="space-y-4">
+        <!-- STABILIZATION SECTION -->
+        <section class="py-40 border-b border-white/5 bg-zinc-950">
+            <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-24 items-center">
+                    <div class="lg:col-span-7 relative group overflow-hidden rounded-[4rem]">
+                        <img src="https://images.unsplash.com/photo-1574169208507-84376144848b?auto=format&fit=crop&q=80&w=1500"
+                            class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-110"
+                            alt="Rapid Response" />
+                        <div
+                            class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500">
+                        </div>
+                    </div>
+                    <div class="lg:col-span-5 space-y-12">
+                        <div class="space-y-4">
+                            <span class="text-primaryAccent font-black uppercase tracking-[0.3em] text-xs">Priority
+                                One</span>
+                            <h2
+                                class="text-6xl md:text-8xl font-black uppercase tracking-tighter text-white leading-none">
+                                Rapid<br />Stability<span class="text-primaryAccent">.</span></h2>
+                        </div>
+                        <p class="text-xl text-gray-400 font-medium leading-relaxed">
+                            Our first priority is stopping water ingress. We use heavy-duty industrial tarps and
+                            rapid-seal composites to protect your interiors while we plan the permanent fix. We handle:
+                        </p>
+                        <ul class="space-y-6">
                             <li
-                                class="flex items-center gap-3 font-black uppercase tracking-widest text-sm border-l-4 border-primaryAccent pl-4 text-white">
-                                Storm Damage</li>
+                                class="flex items-center gap-6 text-white font-black uppercase tracking-[0.3em] text-[10px] animate-in fade-in slide-in-from-right duration-1000 delay-200">
+                                <i data-lucide="shield-alert" class="w-6 h-6 text-primaryAccent"></i> Storm Damage
+                                Mitigation
+                            </li>
                             <li
-                                class="flex items-center gap-3 font-black uppercase tracking-widest text-sm border-l-4 border-primaryAccent pl-4 text-white">
-                                Tree Impacts</li>
-                            <li
-                                class="flex items-center gap-3 font-black uppercase tracking-widest text-sm border-l-4 border-primaryAccent pl-4 text-white">
-                                Structural Failure</li>
-                            <li
-                                class="flex items-center gap-3 font-black uppercase tracking-widest text-sm border-l-4 border-primaryAccent pl-4 text-white">
-                                Active Leaks</li>
+                                class="flex items-center gap-6 text-white font-black uppercase tracking-[0.3em] text-[10px] animate-in fade-in slide-in-from-right duration-1000 delay-500">
+                                <i data-lucide="zap" class="w-6 h-6 text-primaryAccent"></i> Active Leak Containment
+                            </li>
                         </ul>
                     </div>
-                    <img src="https://images.unsplash.com/photo-1595113316349-9fa4ee24f884?auto=format&fit=crop&q=80&w=800"
-                        class="w-full h-[500px] object-cover rounded-3xl" alt="Emergency repair" />
-                </div>
-
-                <div class="mt-40 space-y-24">
-                    <!-- Step-by-Step Help -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-                        <div class="space-y-8">
-                            <span class="text-primaryAccent font-black uppercase tracking-widest text-xs">Our
-                                Process</span>
-                            <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white">First
-                                Steps<span class="text-primaryAccent">.</span></h2>
-                            <p class="text-xl text-gray-400 font-medium leading-relaxed">We prioritize your home's
-                                safety with a proven stabilization method that stops damage in its tracks.</p>
-                            <div class="space-y-6">
-                                <div class="flex gap-6">
-                                    <div
-                                        class="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center font-black text-primaryAccent text-xl">
-                                        1</div>
-                                    <div>
-                                        <h4 class="text-white font-black uppercase tracking-widest text-sm mb-2">
-                                            Immediate Help</h4>
-                                        <p class="text-gray-500 text-sm">A qualified team is sent to your property as
-                                            soon as you call.</p>
-                                    </div>
-                                </div>
-                                <div class="flex gap-6">
-                                    <div
-                                        class="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center font-black text-primaryAccent text-xl">
-                                        2</div>
-                                    <div>
-                                        <h4 class="text-white font-black uppercase tracking-widest text-sm mb-2">
-                                            Thorough Tarping</h4>
-                                        <p class="text-gray-500 text-sm">We use heavy-duty materials to ensure no more
-                                            water enters your home.</p>
-                                    </div>
-                                </div>
-                                <div class="flex gap-6">
-                                    <div
-                                        class="flex-shrink-0 w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center font-black text-primaryAccent text-xl">
-                                        3</div>
-                                    <div>
-                                        <h4 class="text-white font-black uppercase tracking-widest text-sm mb-2">Expert
-                                            Assessment</h4>
-                                        <p class="text-gray-500 text-sm">We perform a complete check of the damage to
-                                            prepare for a permanent fix.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <div class="absolute -inset-4 bg-primaryAccent/20 blur-3xl -z-10"></div>
-                            <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&q=80&w=1200"
-                                class="w-full h-[600px] object-cover rounded-[3rem] border border-white/10 shadow-2xl"
-                                alt="Emergency response" />
-                        </div>
+                    Help<span class="text-primaryAccent">.</span></h2>
+                    <p class="text-xl text-gray-400 font-medium">Navigating insurance claims can be stressful.
+                        We work directly with your provider to ensure everything is documented correctly for a
+                        smooth process.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
+                        <ul class="space-y-4">
+                            <li
+                                class="flex items-center gap-3 text-white font-bold uppercase text-[10px] tracking-widest border-l-2 border-primaryAccent pl-4">
+                                Detailed Documentation</li>
+                            <li
+                                class="flex items-center gap-3 text-white font-bold uppercase text-[10px] tracking-widest border-l-2 border-primaryAccent pl-4">
+                                On-Site Adjuster Support</li>
+                        </ul>
+                        <ul class="space-y-4">
+                            <li
+                                class="flex items-center gap-3 text-white font-bold uppercase text-[10px] tracking-widest border-l-2 border-primaryAccent pl-4">
+                                Local Code Expertise</li>
+                            <li
+                                class="flex items-center gap-3 text-white font-bold uppercase text-[10px] tracking-widest border-l-2 border-primaryAccent pl-4">
+                                Direct Billing Options</li>
+                        </ul>
                     </div>
-
-                    <!-- Insurance Section -->
-                    <div
-                        class="bg-white/5 border border-white/10 rounded-[4rem] p-12 md:p-24 overflow-hidden relative group">
-                        <div
-                            class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-primaryAccent/10 blur-3xl rounded-full transition-all group-hover:scale-110">
-                        </div>
-                        <div class="max-w-3xl relative z-10 space-y-8">
-                            <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white">Insurance
-                                Help<span class="text-primaryAccent">.</span></h2>
-                            <p class="text-xl text-gray-400 font-medium">Navigating insurance claims can be stressful.
-                                We work directly with your provider to ensure everything is documented correctly for a
-                                smooth process.</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-8">
-                                <ul class="space-y-4">
-                                    <li
-                                        class="flex items-center gap-3 text-white font-bold uppercase text-[10px] tracking-widest border-l-2 border-primaryAccent pl-4">
-                                        Detailed Documentation</li>
-                                    <li
-                                        class="flex items-center gap-3 text-white font-bold uppercase text-[10px] tracking-widest border-l-2 border-primaryAccent pl-4">
-                                        On-Site Adjuster Support</li>
-                                </ul>
-                                <ul class="space-y-4">
-                                    <li
-                                        class="flex items-center gap-3 text-white font-bold uppercase text-[10px] tracking-widest border-l-2 border-primaryAccent pl-4">
-                                        Local Code Expertise</li>
-                                    <li
-                                        class="flex items-center gap-3 text-white font-bold uppercase text-[10px] tracking-widest border-l-2 border-primaryAccent pl-4">
-                                        Direct Billing Options</li>
-                                </ul>
-                            </div>
-                            <div class="pt-8">
-                                <a href="tel:(303) 882-3385"
-                                    class="bg-primaryAccent text-black px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-white transition-all shadow-2xl inline-block">
-                                    Start Recovery Now
-                                </a>
-                            </div>
-                        </div>
+                    <div class="pt-8">
+                        <a href="tel:(303) 882-3385"
+                            class="bg-primaryAccent text-black px-12 py-6 rounded-full font-black text-sm uppercase tracking-widest hover:bg-white transition-all shadow-2xl inline-block">
+                            Start Recovery Now
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+            </div>
+            </div>
     </main>
 
     <!-- FOOTER -->
