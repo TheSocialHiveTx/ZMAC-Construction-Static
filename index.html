@@ -114,7 +114,7 @@
         <div class="space-y-8 z-10 animate-in fade-in slide-in-from-bottom duration-1000">
           <div
             class="inline-block bg-primaryAccent px-4 py-1 text-[10px] font-black uppercase tracking-[0.3em] text-black">
-            24/7 Rapid Response
+            24/7 Reliable Service
           </div>
           <h1 class="text-6xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-white">
             Roofing<br />Reinvented<span class="text-primaryAccent">.</span>
@@ -125,7 +125,7 @@
           <div class="flex flex-col sm:flex-row gap-4 pt-4">
             <a href="tel:(303) 882-3385"
               class="bg-white text-black px-10 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-primaryAccent hover:text-black transition-all shadow-xl flex items-center justify-center gap-3">
-              Emergency Dispatch
+              Request Immediate Help
             </a>
             <a href="contact.html"
               class="bg-transparent text-white border-2 border-white px-10 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-white hover:text-black transition-all flex items-center justify-center gap-3">
@@ -287,39 +287,43 @@
                 <div class="space-y-2">
                   <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Name</label>
                   <input required type="text"
-                    class="w-full bg-white border border-gray-200 focus:border-black rounded-lg py-3 px-4 font-bold outline-none transition-all placeholder:text-gray-300"
+                    class="w-full bg-white border-2 border-gray-200 focus:border-primaryAccent rounded-lg py-4 px-4 font-bold text-black outline-none transition-all placeholder:text-gray-300 shadow-sm"
                     placeholder="Full Name" />
                 </div>
                 <div class="space-y-2">
                   <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Phone</label>
                   <input required type="tel"
-                    class="w-full bg-white border border-gray-200 focus:border-black rounded-lg py-3 px-4 font-bold outline-none transition-all placeholder:text-gray-300"
+                    class="w-full bg-white border-2 border-gray-200 focus:border-primaryAccent rounded-lg py-4 px-4 font-bold text-black outline-none transition-all placeholder:text-gray-300 shadow-sm"
                     placeholder="(000) 000-0000" />
                 </div>
               </div>
 
               <div class="space-y-2">
-                <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Urgency</label>
+                <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Project Type</label>
                 <div class="relative">
                   <select
-                    class="w-full bg-white border border-gray-200 focus:border-black rounded-lg py-3 px-4 font-bold outline-none cursor-pointer appearance-none">
-                    <option value="Emergency">Urgent Response</option>
-                    <option value="Soon">Next 24 Hours</option>
-                    <option value="Low">General Quote</option>
+                    class="w-full bg-white border-2 border-gray-200 focus:border-primaryAccent rounded-lg py-4 px-4 font-bold text-black outline-none cursor-pointer appearance-none shadow-sm">
+                    <option class="text-black" value="Emergency">Need Help Fast</option>
+                    <option class="text-black" value="Soon">Planning a Project</option>
+                    <option class="text-black" value="Low">Request an Estimate</option>
                   </select>
+                  <div class="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                    <i data-lucide="chevron-down" class="w-4 h-4 text-gray-400"></i>
+                  </div>
                 </div>
               </div>
 
               <div class="space-y-2">
-                <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Details</label>
-                <textarea rows="3"
-                  class="w-full bg-white border border-gray-200 focus:border-black rounded-lg py-3 px-4 font-bold outline-none transition-all placeholder:text-gray-300 resize-none"
-                  placeholder="What's going on?"></textarea>
+                <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Tell us about your
+                  home</label>
+                <textarea rows="4"
+                  class="w-full bg-white border-2 border-gray-200 focus:border-primaryAccent rounded-lg py-4 px-4 font-bold text-black outline-none transition-all placeholder:text-gray-300 resize-none shadow-sm"
+                  placeholder="How can we help?"></textarea>
               </div>
 
               <button type="submit"
                 class="w-full bg-black text-white py-6 rounded-2xl font-black text-xs uppercase tracking-[0.3em] flex items-center justify-center gap-3 hover:bg-primaryAccent hover:text-black transition-all">
-                DISPATCH NOW
+                SEND REQUEST
               </button>
             </form>
           </div>

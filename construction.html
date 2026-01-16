@@ -119,42 +119,79 @@
                     <p class="text-xl text-gray-400 font-medium max-w-2xl mx-auto">From precision structural framing to
                         elite exterior transformations. We build the future of Colorado with zero compromise.</p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
+                <div class="space-y-32">
+                    <!-- Service 1: Structural -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center group cursor-pointer"
                         onclick="openServiceModal('structural')">
-                        <h3 class="text-2xl font-black uppercase mb-4">Structural Framing</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Industrial-grade precision
-                            for residential and commercial skeletons.</p>
+                        <div class="space-y-8 order-2 lg:order-1">
+                            <span class="text-primaryAccent font-black uppercase tracking-widest text-xs">Foundation &
+                                Bone</span>
+                            <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white">Structural
+                                Framing<span class="text-primaryAccent">.</span></h2>
+                            <p class="text-xl text-gray-400 font-medium leading-relaxed">The integrity of your building
+                                begins with the frame. We provide precision structural work that ensures your home
+                                stands strong for generations.</p>
+                            <div
+                                class="flex items-center gap-4 text-white font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-2 inline-block">
+                                Explore Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </div>
+                        </div>
+                        <div class="relative order-1 lg:order-2">
+                            <img src="https://images.unsplash.com/photo-1541913056027-5981d24e4c0a?auto=format&fit=crop&q=80&w=1200"
+                                class="w-full h-[500px] object-cover rounded-[3rem] grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl"
+                                alt="Structural Framing" />
+                        </div>
                     </div>
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
+
+                    <!-- Service 2: Commercial -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center group cursor-pointer"
                         onclick="openServiceModal('commercial')">
-                        <h3 class="text-2xl font-black uppercase mb-4">Commercial Roofing</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">High-performance membrane
-                            systems for large-scale protection.</p>
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=1200"
+                                class="w-full h-[500px] object-cover rounded-[3rem] grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl"
+                                alt="Commercial Roofing" />
+                        </div>
+                        <div class="space-y-8">
+                            <span
+                                class="text-primaryAccent font-black uppercase tracking-widest text-xs">Exteriors</span>
+                            <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter text-white">Premium
+                                Siding<span class="text-primaryAccent">.</span></h2>
+                            <p class="text-xl text-gray-400 font-medium leading-relaxed">Protect your investment with
+                                architectural-grade siding. We combine aesthetic elegance with extreme durability to
+                                redefine your home's exterior.</p>
+                            <div
+                                class="flex items-center gap-4 text-white font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-2 inline-block">
+                                Explore Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
-                        onclick="openServiceModal('siding')">
-                        <h3 class="text-2xl font-black uppercase mb-4">Modern Siding</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Architectural-grade
-                            materials that redefine curb appeal and durability.</p>
-                    </div>
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
-                        onclick="openServiceModal('gutters')">
-                        <h3 class="text-2xl font-black uppercase mb-4">Gutter Systems</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Custom-formed water
-                            management solutions for heavy mountain runoff.</p>
-                    </div>
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
-                        onclick="openServiceModal('skylights')">
-                        <h3 class="text-2xl font-black uppercase mb-4">Custom Skylights</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Precision-engineered
-                            daylighting systems for modern interiors.</p>
-                    </div>
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
-                        onclick="openServiceModal('ventilation')">
-                        <h3 class="text-2xl font-black uppercase mb-4">Industrial Ventilation</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Smart airflow solutions for
-                            climate control and structural longevity.</p>
+
+                    <!-- Additional Grid for minor services -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div class="bg-white/5 border border-white/10 p-10 rounded-3xl hover:bg-white hover:text-black transition-all group cursor-pointer"
+                            onclick="openServiceModal('gutters')">
+                            <h3 class="text-xl font-black uppercase mb-4">Gutters</h3>
+                            <p class="text-gray-400 group-hover:text-black/60 transition-colors text-sm">Custom water
+                                management for heavy snow.</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 p-10 rounded-3xl hover:bg-white hover:text-black transition-all group cursor-pointer"
+                            onclick="openServiceModal('skylights')">
+                            <h3 class="text-xl font-black uppercase mb-4">Skylights</h3>
+                            <p class="text-gray-400 group-hover:text-black/60 transition-colors text-sm">Velux-certified
+                                natural lighting solutions.</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 p-10 rounded-3xl hover:bg-white hover:text-black transition-all group cursor-pointer"
+                            onclick="openServiceModal('ventilation')">
+                            <h3 class="text-xl font-black uppercase mb-4">Ventilation</h3>
+                            <p class="text-gray-400 group-hover:text-black/60 transition-colors text-sm">Smart airflow
+                                to extend building life.</p>
+                        </div>
+                        <div class="bg-white/5 border border-white/10 p-10 rounded-3xl hover:bg-white hover:text-black transition-all group cursor-pointer"
+                            onclick="openServiceModal('commercial')">
+                            <h3 class="text-xl font-black uppercase mb-4">Commercial</h3>
+                            <p class="text-gray-400 group-hover:text-black/60 transition-colors text-sm">Large-scale
+                                high-performance roofing.</p>
+                        </div>
                     </div>
                 </div>
             </div>

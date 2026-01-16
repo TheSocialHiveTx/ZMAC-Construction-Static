@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const serviceData = {
         'structural': {
             title: 'Structural Framing',
-            description: 'Elite-grade structural skeletons for modern architecture. We use precision-engineered lumber and steel reinforcement to ensure maximum load-bearing capacity and architectural integrity.',
+            description: 'Elite-grade structural frameworks for modern architecture. We use precision-engineered lumber and steel reinforcement to ensure maximum load-bearing capacity and architectural integrity.',
             features: ['Steel Reinforcement', 'Precision Leveling', 'Load Path Engineering', 'Custom Roof Trusses']
         },
         'commercial': {
@@ -62,9 +62,9 @@ document.addEventListener('DOMContentLoaded', () => {
             features: ['Solar Attic Fans', 'Smart Airflow Sensors', 'Ice Dam Prevention', 'Moisture Control']
         },
         'emergency': {
-            title: 'Emergency Response',
-            description: 'Military-grade response for storm damage and critical failures. We don\'t wait—we stabilize. Within hours, our team will have your property protected from further ingress.',
-            features: ['24/7 Dispatch', 'Rapid Tarping', 'Damage Assessment', 'Immediate Stabilization']
+            title: 'Help Now',
+            description: 'Professional-grade response for storm damage and leaks. We don\'t wait—we get to work immediately to protect your home and belongings from further damage.',
+            features: ['24/7 Response', 'Professional Tarping', 'Damage Assessment', 'Immediate Protection']
         },
         'replacement': {
             title: 'Full Replacement',
@@ -73,13 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         'leak': {
             title: 'Leak Detection',
-            description: 'Advanced forensic moisture detection to stop damage at the source. We find what others miss, using thermal imaging and moisture probing technology.',
-            features: ['Thermal Imaging', 'Pressure Testing', 'Precision Sealing', 'Damage Documentation']
+            description: 'Advanced moisture detection to stop damage at the source. We find what others miss, using thermal imaging and specialized tools.',
+            features: ['Thermal Imaging', 'Pressure Testing', 'Precision Sealing', 'Full Documentation']
         },
         'drone': {
-            title: 'Drone Inspections',
-            description: 'High-resolution aerial assessments for accurate insurance claims and preventative maintenance. Get a 4K view of your asset\'s health without setting foot on a ladder.',
-            features: ['4K Detail', 'Thermal Analysis', 'Insurance Documentation', 'AI-assisted Detection']
+            title: 'Roof Inspections',
+            description: 'Ariel assessments for accurate insurance information and preventative care. Get a clear view of your roof\'s health from the safety of the ground.',
+            features: ['High Detail', 'Heat Analysis', 'Insurance Support', 'Detailed Reports']
         }
     };
 
@@ -172,7 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 formContent.classList.remove('hidden');
                 successMessage.classList.add('hidden');
                 contactForm.reset();
-                submitBtn.innerText = 'DISPATCH NOW'; // Reset to original text manually or store it
+                submitBtn.innerText = 'SEND REQUEST'; // Reset to original text manually or store it
                 submitBtn.disabled = false;
             }
         });
