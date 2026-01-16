@@ -72,8 +72,8 @@
           class="font-semibold text-xs uppercase tracking-widest transition-all text-white border-b-2 border-primaryAccent">Home</a>
         <a href="emergency.html"
           class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-white">Emergency</a>
-        <a href="residential.html"
-          class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-white">Residential</a>
+        <a href="construction.html"
+          class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-white">Construction</a>
         <a href="about.html"
           class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-white">About</a>
         <a href="reviews.html"
@@ -96,8 +96,8 @@
       <button id="mobile-menu-close" class="absolute top-6 right-6"><i data-lucide="x" class="w-8 h-8"></i></button>
       <a href="index.html" class="text-left font-black text-4xl uppercase tracking-tighter text-primaryAccent">Home</a>
       <a href="emergency.html" class="text-left font-black text-4xl uppercase tracking-tighter text-black">Emergency</a>
-      <a href="residential.html"
-        class="text-left font-black text-4xl uppercase tracking-tighter text-black">Residential</a>
+      <a href="construction.html"
+        class="text-left font-black text-4xl uppercase tracking-tighter text-black">Construction</a>
       <a href="about.html" class="text-left font-black text-4xl uppercase tracking-tighter text-black">About</a>
       <a href="reviews.html" class="text-left font-black text-4xl uppercase tracking-tighter text-black">Reviews</a>
       <a href="tel:(303) 882-3385"
@@ -180,18 +180,21 @@
             <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter">Superior Craft<span
                 class="text-primaryAccent">.</span></h2>
           </div>
-          <p class="max-w-md text-gray-500 font-medium text-lg">From minor repairs to complete commercial
+          <p class="max-w-md text-gray-400 font-medium text-lg">From minor repairs to complete commercial
             transformations, we execute with elite standard.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-100">
           <!-- Service 1 -->
-          <div class="bg-white p-16 hover:bg-softGray transition-all group">
-            <div class="text-black mb-10 group-hover:scale-110 transition-transform duration-500">
-              <i data-lucide="zap" class="w-12 h-12 text-primaryAccent"></i>
+          <div class="bg-white p-16 hover:bg-black hover:text-white transition-all group cursor-pointer"
+            onclick="openServiceModal('emergency')">
+            <div
+              class="text-black group-hover:text-primaryAccent mb-10 group-hover:scale-110 transition-all duration-500">
+              <i data-lucide="zap" class="w-12 h-12"></i>
             </div>
             <h3 class="text-3xl font-black uppercase mb-4">Emergency Repair</h3>
-            <p class="text-gray-500 text-lg leading-relaxed mb-8">Immediate response for leaks, storm damage, and
+            <p class="text-gray-500 group-hover:text-gray-400 text-lg leading-relaxed mb-8">Immediate response for
+              leaks, storm damage, and
               structural hazards.</p>
             <button
               class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
@@ -199,12 +202,15 @@
             </button>
           </div>
           <!-- Service 2 -->
-          <div class="bg-white p-16 hover:bg-softGray transition-all group">
-            <div class="text-black mb-10 group-hover:scale-110 transition-transform duration-500">
-              <i data-lucide="home" class="w-12 h-12 text-primaryAccent"></i>
+          <div class="bg-white p-16 hover:bg-black hover:text-white transition-all group cursor-pointer"
+            onclick="openServiceModal('replacement')">
+            <div
+              class="text-black group-hover:text-primaryAccent mb-10 group-hover:scale-110 transition-all duration-500">
+              <i data-lucide="home" class="w-12 h-12"></i>
             </div>
             <h3 class="text-3xl font-black uppercase mb-4">Full Replacement</h3>
-            <p class="text-gray-500 text-lg leading-relaxed mb-8">Complete roof overhauls with premium shingles and
+            <p class="text-gray-500 group-hover:text-gray-400 text-lg leading-relaxed mb-8">Complete roof overhauls with
+              premium shingles and
               expert craftsmanship.</p>
             <button
               class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
@@ -212,12 +218,15 @@
             </button>
           </div>
           <!-- Service 3 -->
-          <div class="bg-white p-16 hover:bg-softGray transition-all group">
-            <div class="text-black mb-10 group-hover:scale-110 transition-transform duration-500">
-              <i data-lucide="droplets" class="w-12 h-12 text-primaryAccent"></i>
+          <div class="bg-white p-16 hover:bg-black hover:text-white transition-all group cursor-pointer"
+            onclick="openServiceModal('leak')">
+            <div
+              class="text-black group-hover:text-primaryAccent mb-10 group-hover:scale-110 transition-all duration-500">
+              <i data-lucide="droplets" class="w-12 h-12"></i>
             </div>
             <h3 class="text-3xl font-black uppercase mb-4">Leak Detection</h3>
-            <p class="text-gray-500 text-lg leading-relaxed mb-8">Advanced moisture detection and precision sealing to
+            <p class="text-gray-500 group-hover:text-gray-400 text-lg leading-relaxed mb-8">Advanced moisture detection
+              and precision sealing to
               stop damage fast.</p>
             <button
               class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
@@ -225,12 +234,15 @@
             </button>
           </div>
           <!-- Service 4 -->
-          <div class="bg-white p-16 hover:bg-softGray transition-all group">
-            <div class="text-black mb-10 group-hover:scale-110 transition-transform duration-500">
-              <i data-lucide="search" class="w-12 h-12 text-primaryAccent"></i>
+          <div class="bg-white p-16 hover:bg-black hover:text-white transition-all group cursor-pointer"
+            onclick="openServiceModal('drone')">
+            <div
+              class="text-black group-hover:text-primaryAccent mb-10 group-hover:scale-110 transition-all duration-500">
+              <i data-lucide="search" class="w-12 h-12"></i>
             </div>
             <h3 class="text-3xl font-black uppercase mb-4">Drone Inspections</h3>
-            <p class="text-gray-500 text-lg leading-relaxed mb-8">High-tech damage assessment for accurate insurance
+            <p class="text-gray-500 group-hover:text-gray-400 text-lg leading-relaxed mb-8">High-tech damage assessment
+              for accurate insurance
               claims.</p>
             <button
               class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
@@ -247,7 +259,7 @@
         <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">
           Fix it<br />today<span class="text-primaryAccent">.</span>
         </h2>
-        <p class="text-xl text-gray-500 font-medium mb-12">Stop the damage before it starts. Get a transparent, no-fluff
+        <p class="text-xl text-gray-400 font-medium mb-12">Stop the damage before it starts. Get a transparent, no-fluff
           quote in minutes.</p>
         <div class="space-y-6">
           <div class="flex items-center gap-4">
@@ -362,8 +374,8 @@
           <li><a href="emergency.html"
               class="text-gray-400 hover:text-black transition-colors text-sm font-bold uppercase tracking-widest">Emergency</a>
           </li>
-          <li><a href="residential.html"
-              class="text-gray-400 hover:text-black transition-colors text-sm font-bold uppercase tracking-widest">Residential</a>
+          <li><a href="construction.html"
+              class="text-gray-400 hover:text-black transition-colors text-sm font-bold uppercase tracking-widest">Construction</a>
           </li>
           <li><a href="about.html"
               class="text-gray-400 hover:text-black transition-colors text-sm font-bold uppercase tracking-widest">About</a>

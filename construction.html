@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Residential - ZMAC Construction</title>
+    <title>Construction - ZMAC Construction</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -72,8 +72,8 @@
                     class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-white">Home</a>
                 <a href="emergency.html"
                     class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-white">Emergency</a>
-                <a href="residential.html"
-                    class="font-semibold text-xs uppercase tracking-widest transition-all text-white border-b-2 border-primaryAccent">Residential</a>
+                <a href="construction.html"
+                    class="font-semibold text-xs uppercase tracking-widest transition-all text-white border-b-2 border-primaryAccent">Construction</a>
                 <a href="about.html"
                     class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-white">About</a>
                 <a href="reviews.html"
@@ -114,41 +114,47 @@
         <div class="pt-32 pb-40 bg-black text-white">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-24 space-y-6">
-                    <h1 class="text-7xl md:text-9xl font-black uppercase tracking-tighter text-white">Residential<span
+                    <h1 class="text-7xl md:text-9xl font-black uppercase tracking-tighter text-white">Construction<span
                             class="text-primaryAccent">.</span></h1>
-                    <p class="text-xl text-gray-400 font-medium max-w-2xl mx-auto">The gold standard in home protection.
-                        Premium shingles, elite installation, lifetime warranties.</p>
+                    <p class="text-xl text-gray-400 font-medium max-w-2xl mx-auto">From precision structural framing to
+                        elite exterior transformations. We build the future of Colorado with zero compromise.</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group">
-                        <h3 class="text-2xl font-black uppercase mb-4">Shingle Replacement</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Precision execution for
-                            every corner of your home's exterior.</p>
+                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
+                        onclick="openServiceModal('structural')">
+                        <h3 class="text-2xl font-black uppercase mb-4">Structural Framing</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Industrial-grade precision
+                            for residential and commercial skeletons.</p>
                     </div>
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group">
+                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
+                        onclick="openServiceModal('commercial')">
+                        <h3 class="text-2xl font-black uppercase mb-4">Commercial Roofing</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">High-performance membrane
+                            systems for large-scale protection.</p>
+                    </div>
+                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
+                        onclick="openServiceModal('siding')">
+                        <h3 class="text-2xl font-black uppercase mb-4">Modern Siding</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Architectural-grade
+                            materials that redefine curb appeal and durability.</p>
+                    </div>
+                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
+                        onclick="openServiceModal('gutters')">
                         <h3 class="text-2xl font-black uppercase mb-4">Gutter Systems</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Precision execution for
-                            every corner of your home's exterior.</p>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Custom-formed water
+                            management solutions for heavy mountain runoff.</p>
                     </div>
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group">
-                        <h3 class="text-2xl font-black uppercase mb-4">Skylights</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Precision execution for
-                            every corner of your home's exterior.</p>
+                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
+                        onclick="openServiceModal('skylights')">
+                        <h3 class="text-2xl font-black uppercase mb-4">Custom Skylights</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Precision-engineered
+                            daylighting systems for modern interiors.</p>
                     </div>
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group">
-                        <h3 class="text-2xl font-black uppercase mb-4">Attic Ventilation</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Precision execution for
-                            every corner of your home's exterior.</p>
-                    </div>
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group">
-                        <h3 class="text-2xl font-black uppercase mb-4">Siding Repair</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Precision execution for
-                            every corner of your home's exterior.</p>
-                    </div>
-                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group">
-                        <h3 class="text-2xl font-black uppercase mb-4">Drone Inspections</h3>
-                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Precision execution for
-                            every corner of your home's exterior.</p>
+                    <div class="bg-white p-12 hover:bg-black hover:text-white transition-all group cursor-pointer"
+                        onclick="openServiceModal('ventilation')">
+                        <h3 class="text-2xl font-black uppercase mb-4">Industrial Ventilation</h3>
+                        <p class="text-gray-400 group-hover:text-gray-300 transition-colors">Smart airflow solutions for
+                            climate control and structural longevity.</p>
                     </div>
                 </div>
             </div>
