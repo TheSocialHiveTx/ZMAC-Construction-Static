@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZMAC Construction | Modern Roofing Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #000000;
+      background-color: #ffffff;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Space+Grotesk', sans-serif;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .modern-gradient {
+      background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    }
+
+    .text-outline {
+      -webkit-text-stroke: 1px black;
+      color: transparent;
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandPrimary: '#000000',
+            primaryAccent: '#FFD700', /* A more premium Golden Yellow */
+            primaryAccentHover: '#F2CC00',
+            softGray: '#F5F5F7',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-white text-black selection:bg-primaryAccent selection:text-black">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 w-full z-50 transition-all duration-300 bg-transparent py-6">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html" class="flex flex-col cursor-pointer group">
+        <span class="text-black font-black text-3xl leading-none tracking-tighter uppercase">
+          ZMAC<span class="text-primaryAccent">.</span>
+        </span>
+        <span class="text-[10px] font-bold text-gray-500 tracking-[0.3em] leading-none mt-1">CONSTRUCTION</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-10">
+        <a href="index.html"
+          class="font-semibold text-xs uppercase tracking-widest transition-all text-black border-b-2 border-primaryAccent">Home</a>
+        <a href="emergency.html"
+          class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-black">Emergency</a>
+        <a href="residential.html"
+          class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-black">Residential</a>
+        <a href="about.html"
+          class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-black">About</a>
+        <a href="reviews.html"
+          class="font-semibold text-xs uppercase tracking-widest transition-all text-gray-400 hover:text-black">Reviews</a>
+        <a href="tel:(303) 882-3385"
+          class="bg-black text-white px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-primaryAccent hover:text-black transition-all flex items-center gap-2">
+          <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+          (303) 882-3385
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button id="mobile-menu-btn" class="md:hidden text-black p-2">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-50 flex flex-col pt-24 px-8 space-y-8">
+      <button id="mobile-menu-close" class="absolute top-6 right-6"><i data-lucide="x" class="w-8 h-8"></i></button>
+      <a href="index.html" class="text-left font-black text-4xl uppercase tracking-tighter text-primaryAccent">Home</a>
+      <a href="emergency.html" class="text-left font-black text-4xl uppercase tracking-tighter text-black">Emergency</a>
+      <a href="residential.html"
+        class="text-left font-black text-4xl uppercase tracking-tighter text-black">Residential</a>
+      <a href="about.html" class="text-left font-black text-4xl uppercase tracking-tighter text-black">About</a>
+      <a href="reviews.html" class="text-left font-black text-4xl uppercase tracking-tighter text-black">Reviews</a>
+      <a href="tel:(303) 882-3385"
+        class="w-full bg-black text-white py-5 rounded-xl font-black text-center text-2xl mt-8">
+        (303) 882-3385
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Minimalist Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center pt-24 overflow-hidden bg-white">
+      <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-8 z-10 animate-in fade-in slide-in-from-bottom duration-1000">
+          <div class="inline-block bg-primaryAccent px-4 py-1 text-[10px] font-black uppercase tracking-[0.3em]">
+            24/7 Rapid Response
+          </div>
+          <h1 class="text-6xl md:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-black">
+            Roofing<br />Reinvented<span class="text-primaryAccent">.</span>
+          </h1>
+          <p class="text-xl text-gray-500 font-medium leading-relaxed max-w-lg">
+            High-performance roofing solutions delivered with speed, precision, and zero compromise.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 pt-4">
+            <a href="tel:(303) 882-3385"
+              class="bg-black text-white px-10 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-primaryAccent hover:text-black transition-all shadow-xl flex items-center justify-center gap-3">
+              Emergency Dispatch
+            </a>
+            <a href="contact.html"
+              class="bg-transparent text-black border-2 border-black px-10 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-black hover:text-white transition-all flex items-center justify-center gap-3">
+              Get a Quote <i data-lucide="arrow-right" class="w-4.5 h-4.5"></i>
+            </a>
+          </div>
+        </div>
+        <div class="relative group">
+          <div
+            class="absolute inset-0 bg-primaryAccent translate-x-6 translate-y-6 -z-10 group-hover:translate-x-4 group-hover:translate-y-4 transition-all">
+          </div>
+          <img src="https://images.unsplash.com/photo-1635424710928-0544e8512eae?auto=format&fit=crop&q=80&w=1000"
+            alt="Modern Roof"
+            class="w-full h-[600px] object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-700 shadow-2xl" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Big Typography Section -->
+    <section class="py-32 bg-black text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-5xl md:text-7xl font-black uppercase leading-tight mb-12">
+          Your home deserves <span class="text-outline">protection</span> without the <span
+            class="text-primaryAccent">hassle.</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 text-left max-w-5xl mx-auto pt-12">
+          <div class="space-y-4">
+            <h3 class="text-primaryAccent text-2xl font-black uppercase">Elite Status</h3>
+            <p class="text-gray-400 font-medium">Licensed, insured, and certified by GAF for your ultimate peace of
+              mind.</p>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-primaryAccent text-2xl font-black uppercase">Zero Waste</h3>
+            <p class="text-gray-400 font-medium">Clean, professional job sites. We respect your property like it's our
+              own.</p>
+          </div>
+          <div class="space-y-4">
+            <h3 class="text-primaryAccent text-2xl font-black uppercase">Instant Fix</h3>
+            <p class="text-gray-400 font-medium">Why wait? Our emergency team stabilizes damage within hours, not days.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spacious Services Section -->
+    <section class="py-40 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+          <div class="space-y-4">
+            <span class="text-primaryAccent font-black uppercase tracking-widest text-xs">Capabilities</span>
+            <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter">Superior Craft<span
+                class="text-primaryAccent">.</span></h2>
+          </div>
+          <p class="max-w-md text-gray-500 font-medium text-lg">From minor repairs to complete commercial
+            transformations, we execute with elite standard.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-gray-100">
+          <!-- Service 1 -->
+          <div class="bg-white p-16 hover:bg-softGray transition-all group">
+            <div class="text-black mb-10 group-hover:scale-110 transition-transform duration-500">
+              <i data-lucide="zap" class="w-12 h-12 text-primaryAccent"></i>
+            </div>
+            <h3 class="text-3xl font-black uppercase mb-4">Emergency Repair</h3>
+            <p class="text-gray-500 text-lg leading-relaxed mb-8">Immediate response for leaks, storm damage, and
+              structural hazards.</p>
+            <button
+              class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
+              Details <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+          <!-- Service 2 -->
+          <div class="bg-white p-16 hover:bg-softGray transition-all group">
+            <div class="text-black mb-10 group-hover:scale-110 transition-transform duration-500">
+              <i data-lucide="home" class="w-12 h-12 text-primaryAccent"></i>
+            </div>
+            <h3 class="text-3xl font-black uppercase mb-4">Full Replacement</h3>
+            <p class="text-gray-500 text-lg leading-relaxed mb-8">Complete roof overhauls with premium shingles and
+              expert craftsmanship.</p>
+            <button
+              class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
+              Details <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+          <!-- Service 3 -->
+          <div class="bg-white p-16 hover:bg-softGray transition-all group">
+            <div class="text-black mb-10 group-hover:scale-110 transition-transform duration-500">
+              <i data-lucide="droplets" class="w-12 h-12 text-primaryAccent"></i>
+            </div>
+            <h3 class="text-3xl font-black uppercase mb-4">Leak Detection</h3>
+            <p class="text-gray-500 text-lg leading-relaxed mb-8">Advanced moisture detection and precision sealing to
+              stop damage fast.</p>
+            <button
+              class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
+              Details <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+          <!-- Service 4 -->
+          <div class="bg-white p-16 hover:bg-softGray transition-all group">
+            <div class="text-black mb-10 group-hover:scale-110 transition-transform duration-500">
+              <i data-lucide="search" class="w-12 h-12 text-primaryAccent"></i>
+            </div>
+            <h3 class="text-3xl font-black uppercase mb-4">Drone Inspections</h3>
+            <p class="text-gray-500 text-lg leading-relaxed mb-8">High-tech damage assessment for accurate insurance
+              claims.</p>
+            <button
+              class="flex items-center gap-2 font-black uppercase text-xs tracking-widest border-b-2 border-primaryAccent pb-1">
+              Details <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Split Section -->
+    <section class="min-h-screen flex flex-col lg:flex-row bg-white overflow-hidden">
+      <div class="lg:w-1/2 p-12 md:p-24 flex flex-col justify-center bg-softGray">
+        <h2 class="text-6xl md:text-8xl font-black uppercase tracking-tighter mb-8 leading-[0.9]">
+          Fix it<br />today<span class="text-primaryAccent">.</span>
+        </h2>
+        <p class="text-xl text-gray-500 font-medium mb-12">Stop the damage before it starts. Get a transparent, no-fluff
+          quote in minutes.</p>
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-black">1</div>
+            <p class="font-bold uppercase tracking-widest text-sm">Tell us about the issue</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-black">2</div>
+            <p class="font-bold uppercase tracking-widest text-sm">Our team reviews and calls</p>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="w-12 h-12 bg-black text-white rounded-full flex items-center justify-center font-black">3</div>
+            <p class="font-bold uppercase tracking-widest text-sm">Problem solved same-day</p>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-1/2 p-6 md:p-12 lg:p-24 bg-black flex flex-col justify-center">
+        <div class="bg-white p-1 rounded-2xl">
+          <!-- Contact Form Component -->
+          <div id="form-content" class="p-4 md:p-8">
+            <h3 class="text-3xl font-black uppercase tracking-tighter mb-10">Request Help<span
+                class="text-primaryAccent">.</span></h3>
+            <form id="contact-form" class="space-y-8">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                <div class="space-y-2">
+                  <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Name</label>
+                  <input required type="text"
+                    class="w-full bg-transparent border-b-2 border-gray-100 focus:border-black py-2 font-bold outline-none transition-all placeholder:text-gray-200"
+                    placeholder="Full Name" />
+                </div>
+                <div class="space-y-2">
+                  <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Phone</label>
+                  <input required type="tel"
+                    class="w-full bg-transparent border-b-2 border-gray-100 focus:border-black py-2 font-bold outline-none transition-all placeholder:text-gray-200"
+                    placeholder="(000) 000-0000" />
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Urgency</label>
+                <div class="relative">
+                  <select
+                    class="w-full bg-transparent border-b-2 border-gray-100 focus:border-black py-2 font-bold outline-none cursor-pointer appearance-none">
+                    <option value="Emergency">Urgent Response</option>
+                    <option value="Soon">Next 24 Hours</option>
+                    <option value="Low">General Quote</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="space-y-2">
+                <label class="text-[10px] font-black uppercase tracking-widest text-gray-400">Details</label>
+                <textarea rows="3"
+                  class="w-full bg-transparent border-b-2 border-gray-100 focus:border-black py-2 font-bold outline-none transition-all placeholder:text-gray-200 resize-none"
+                  placeholder="What's going on?"></textarea>
+              </div>
+
+              <button type="submit"
+                class="w-full bg-black text-white py-6 rounded-2xl font-black text-xs uppercase tracking-[0.3em] flex items-center justify-center gap-3 hover:bg-primaryAccent hover:text-black transition-all">
+                DISPATCH NOW
+              </button>
+            </form>
+          </div>
+
+          <!-- Success Message -->
+          <div id="form-success" class="hidden p-12 text-center space-y-6">
+            <div class="flex justify-center">
+              <i data-lucide="check-circle-2" class="w-20 h-20 text-black"></i>
+            </div>
+            <h3 class="text-4xl font-black uppercase tracking-tighter">Sent.</h3>
+            <p className="text-lg text-gray-500 font-medium">
+              We'll call you within 15 minutes.
+            </p>
+            <button id="send-another-btn"
+              class="bg-black text-white px-8 py-3 rounded-full font-black uppercase tracking-widest text-xs">
+              Send Another
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-white pt-32 pb-12 border-t border-black/5">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+      <div class="space-y-8">
+        <div class="flex flex-col">
+          <span class="text-black font-black text-4xl leading-none tracking-tighter uppercase">
+            ZMAC<span class="text-primaryAccent">.</span>
+          </span>
+          <span class="text-[10px] font-bold text-gray-400 tracking-[0.3em] mt-1">CONSTRUCTION</span>
+        </div>
+        <p class="text-gray-400 text-sm font-medium leading-relaxed">
+          Elevating the standard of roofing in Lakewood through elite craftsmanship and instant response.
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="p-3 bg-softGray rounded-full hover:bg-black hover:text-white transition-all"><i
+              data-lucide="facebook" class="w-4.5 h-4.5"></i></a>
+          <a href="#" class="p-3 bg-softGray rounded-full hover:bg-black hover:text-white transition-all"><i
+              data-lucide="instagram" class="w-4.5 h-4.5"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-black uppercase tracking-[0.3em] mb-8 text-black">Company</h3>
+        <ul class="space-y-4">
+          <li><a href="index.html"
+              class="text-gray-400 hover:text-black transition-colors text-sm font-bold uppercase tracking-widest">Home</a>
+          </li>
+          <li><a href="emergency.html"
+              class="text-gray-400 hover:text-black transition-colors text-sm font-bold uppercase tracking-widest">Emergency</a>
+          </li>
+          <li><a href="residential.html"
+              class="text-gray-400 hover:text-black transition-colors text-sm font-bold uppercase tracking-widest">Residential</a>
+          </li>
+          <li><a href="about.html"
+              class="text-gray-400 hover:text-black transition-colors text-sm font-bold uppercase tracking-widest">About</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xs font-black uppercase tracking-[0.3em] mb-8 text-black">Contact</h3>
+        <ul class="space-y-6">
+          <li class="space-y-1">
+            <p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-300">Phone</p>
+            <p class="font-black text-xl">(303) 882-3385</p>
+          </li>
+          <li class="space-y-1">
+            <p class="text-[10px] font-black uppercase tracking-[0.3em] text-gray-300">Office</p>
+            <p class="font-bold text-sm text-gray-500 leading-relaxed">2103 S Wadsworth Blvd Suite #103, Lakewood, CO
+              80227</p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-black p-8 rounded-3xl text-white">
+        <h3 class="text-xs font-black uppercase tracking-[0.3em] mb-4 text-primaryAccent">Always Active</h3>
+        <p class="font-medium text-gray-400 text-sm italic mb-6">"We respond while others are still checking their
+          calendar."</p>
+        <div class="h-1 bg-primaryAccent w-12"></div>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto px-6 mt-32 pt-12 border-t border-black/5 flex flex-col md:flex-row justify-between items-center gap-6 text-[10px] font-black uppercase tracking-[0.3em] text-gray-300">
+      <p>© 2026 ZMAC Construction Inc.</p>
+      <div class="flex gap-8">
+        <a href="#" class="hover:text-black transition-colors">Privacy</a>
+        <a href="#" class="hover:text-black transition-colors">Terms</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
+</html>
