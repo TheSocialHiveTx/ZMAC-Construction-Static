@@ -2,37 +2,75 @@
     body {
         font-family: 'Inter', sans-serif;
         -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: 'Space Grotesk', sans-serif;
         letter-spacing: -0.02em;
     }
 }
 
 @keyframes slow-zoom {
-    from { transform: scale(1); }
-    to { transform: scale(1.15); }
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.15);
+    }
 }
 
 @keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slide-up {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slide-right {
-    from { transform: translateX(-50px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 @keyframes slide-left {
-    from { transform: translateX(50px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .animate-slow-zoom {
@@ -43,15 +81,37 @@
     animation-fill-mode: both;
 }
 
-.fade-in { animation-name: fade-in; }
-.slide-in-from-bottom { animation-name: slide-up; }
-.slide-in-from-left { animation-name: slide-right; }
-.slide-in-from-right { animation-name: slide-left; }
+.fade-in {
+    animation-name: fade-in;
+}
 
-.duration-1000 { animation-duration: 1000ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-500 { animation-delay: 500ms; }
-.delay-700 { animation-delay: 700ms; }
+.slide-in-from-bottom {
+    animation-name: slide-up;
+}
+
+.slide-in-from-left {
+    animation-name: slide-right;
+}
+
+.slide-in-from-right {
+    animation-name: slide-left;
+}
+
+.duration-1000 {
+    animation-duration: 1000ms;
+}
+
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+.delay-500 {
+    animation-delay: 500ms;
+}
+
+.delay-700 {
+    animation-delay: 700ms;
+}
 
 .text-outline {
     -webkit-text-stroke: 1px white;
@@ -61,5 +121,5 @@
 .glass-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    border: 1px border rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }

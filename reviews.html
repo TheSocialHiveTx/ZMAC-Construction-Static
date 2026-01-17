@@ -70,19 +70,22 @@
         </div>
 
         <!-- Mobile Nav Overlay -->
-        <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-white z-50 flex flex-col pt-24 px-8 space-y-8">
-            <button id="mobile-menu-close" class="absolute top-6 right-6"><i data-lucide="x"
-                    class="w-8 h-8"></i></button>
-            <a href="index.html" class="text-left font-black text-4xl uppercase tracking-tighter text-black">Home</a>
+        <div id="mobile-menu"
+            class="hidden md:hidden fixed inset-0 bg-black/98 backdrop-blur-2xl z-[100] flex flex-col pt-24 px-8 space-y-8">
+            <button id="mobile-menu-close"
+                class="absolute top-6 right-6 text-white/50 hover:text-white transition-colors">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <a href="index.html" class="text-left font-black text-6xl uppercase tracking-tighter text-white">Home</a>
             <a href="emergency.html"
-                class="text-left font-black text-4xl uppercase tracking-tighter text-black">Emergency</a>
+                class="text-left font-black text-6xl uppercase tracking-tighter text-white">Emergency</a>
             <a href="construction.html"
-                class="text-left font-black text-4xl uppercase tracking-tighter text-black">Construction</a>
-            <a href="about.html" class="text-left font-black text-4xl uppercase tracking-tighter text-black">About</a>
+                class="text-left font-black text-6xl uppercase tracking-tighter text-white">Construction</a>
+            <a href="about.html" class="text-left font-black text-6xl uppercase tracking-tighter text-white">About</a>
             <a href="reviews.html"
-                class="text-left font-black text-4xl uppercase tracking-tighter text-primaryAccent">Reviews</a>
+                class="text-left font-black text-6xl uppercase tracking-tighter text-primaryAccent">Reviews</a>
             <a href="tel:(303) 882-3385"
-                class="w-full bg-black text-white py-5 rounded-xl font-black text-center text-2xl mt-8">
+                class="w-full bg-primaryAccent text-black py-5 rounded-xl font-black text-center text-2xl mt-8">
                 (303) 882-3385
             </a>
         </div>
@@ -104,7 +107,7 @@
                         The Verdict
                     </span>
                     <h1
-                        class="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-white animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
+                        class="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-white animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
                         Proven<br />Service<span class="text-primaryAccent">.</span>
                     </h1>
                     <p
@@ -150,14 +153,37 @@
                     </div>
 
                     <!-- Review 2 -->
-                    other companies missed. Price was fair and competitive."</p>
-                    <p class="font-black uppercase tracking-widest text-xs text-primaryAccent">Robert Chen / 3 weeks
-                        ago</p>
+                    <div
+                        class="glass-card p-16 rounded-[4rem] flex flex-col justify-between space-y-12 group hover:bg-white/10 transition-all duration-500">
+                        <div class="space-y-8">
+                            <div class="flex gap-1 text-primaryAccent">
+                                <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+                                <i data-lucide="star" class="w-5 h-5 fill-current border-none"></i>
+                            </div>
+                            <p class="text-3xl font-black uppercase tracking-tight text-white leading-tight">
+                                "The level of detail on the flashing and valley work was incredible. They found leaks
+                                that
+                                other companies missed. Price was fair and competitive."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center font-black text-2xl text-white">
+                                R</div>
+                            <div>
+                                <h4 class="text-white font-black uppercase tracking-widest text-xs">Robert Chen</h4>
+                                <p class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">3 weeks ago</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
-            </div>
+        </section>
     </main>
+
 
     <!-- FOOTER -->
     <footer class="bg-white pt-32 pb-12 border-t border-black/5">
