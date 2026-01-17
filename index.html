@@ -69,23 +69,6 @@
       </button>
     </div>
 
-    <!-- Mobile Nav Overlay -->
-    <div id="mobile-menu"
-      class="hidden md:hidden fixed inset-0 bg-black/98 backdrop-blur-2xl z-[100] flex flex-col pt-24 px-8 space-y-8 animate-in fade-in duration-300">
-      <button id="mobile-menu-close" class="absolute top-6 right-6 text-white/50 hover:text-white transition-colors">
-        <i data-lucide="x" class="w-8 h-8"></i>
-      </button>
-      <a href="index.html" class="text-left font-black text-6xl uppercase tracking-tighter text-primaryAccent">Home</a>
-      <a href="emergency.html" class="text-left font-black text-6xl uppercase tracking-tighter text-white">Emergency</a>
-      <a href="construction.html"
-        class="text-left font-black text-6xl uppercase tracking-tighter text-white">Construction</a>
-      <a href="about.html" class="text-left font-black text-6xl uppercase tracking-tighter text-white">About</a>
-      <a href="reviews.html" class="text-left font-black text-6xl uppercase tracking-tighter text-white">Reviews</a>
-      <a href="tel:(303) 882-3385"
-        class="w-full bg-primaryAccent text-black py-5 rounded-xl font-black text-center text-2xl mt-8">
-        (303) 882-3385
-      </a>
-    </div>
   </header>
 
   <main class="bg-black">
@@ -104,7 +87,7 @@
             Lakewood's Elite
           </span>
           <h1
-            class="text-5xl sm:text-7xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.8] text-white animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
+            class="text-4xl sm:text-7xl md:text-[10rem] font-black uppercase tracking-tighter leading-[0.8] text-white animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
             Peak<br />Protection<span class="text-primaryAccent">.</span>
           </h1>
           <p
@@ -136,7 +119,7 @@
           without the <span class="bg-primaryAccent text-black px-4 sm:px-6 py-2 inline-block">Hassle.</span>
         </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-24 text-left">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-24 text-left">
           <div class="space-y-8 animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
             <h3 class="text-2xl font-black uppercase tracking-widest text-primaryAccent">Elite Status</h3>
             <p class="text-lg text-gray-400 font-medium leading-relaxed">
@@ -168,7 +151,7 @@
             <div class="space-y-4">
               <span class="text-primaryAccent font-black uppercase tracking-[0.3em] text-xs">Our Commitment</span>
               <h2
-                class="text-5xl sm:text-6xl md:text-8xl font-black uppercase tracking-tighter text-white leading-none">
+                class="text-4xl sm:text-7xl md:text-8xl font-black uppercase tracking-tighter text-white leading-none">
                 Elite<br />Craftsmanship<span class="text-primaryAccent">.</span>
               </h2>
             </div>
@@ -189,7 +172,7 @@
           </div>
           <div class="lg:col-span-6 relative group overflow-hidden rounded-[4rem]">
             <img src="https://images.unsplash.com/photo-1449156001931-82992a47279f?auto=format&fit=crop&q=80&w=1500"
-              class="w-full h-[600px] object-cover transition-transform duration-1000 group-hover:scale-110"
+              class="w-full h-[400px] md:h-[600px] object-cover transition-transform duration-1000 group-hover:scale-110"
               alt="Elite Craft" />
             <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
           </div>
@@ -202,16 +185,16 @@
       <div class="container mx-auto px-6">
         <div class="text-center mb-32 space-y-4">
           <span class="text-primaryAccent font-black uppercase tracking-[0.4em] text-xs">Technical Mastery</span>
-          <h2 class="text-5xl sm:text-6xl md:text-8xl font-black uppercase tracking-tighter text-white">Superior
+          <h2 class="text-4xl sm:text-7xl md:text-8xl font-black uppercase tracking-tighter text-white">Superior
             Systems<span class="text-primaryAccent">.</span></h2>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <!-- Card 1 -->
           <div onclick="openServiceModal('replacement')"
-            class="group relative h-[600px] rounded-[3rem] overflow-hidden cursor-pointer">
+            class="group relative h-[400px] md:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer">
             <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&q=80&w=1200"
-              class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+              class="absolute inset-0 w-full h-[400px] md:h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               alt="Full Replacement" />
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
             <div class="absolute bottom-12 left-12 right-12 space-y-6">
@@ -230,7 +213,7 @@
 
           <!-- Card 2 -->
           <div onclick="openServiceModal('emergency')"
-            class="group relative h-[600px] rounded-[3rem] overflow-hidden cursor-pointer">
+            class="group relative h-[400px] md:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer">
             <img src="https://images.unsplash.com/photo-1595113316349-9fa4ee24f884?auto=format&fit=crop&q=80&w=1200"
               class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               alt="Emergency Help" />
@@ -423,6 +406,22 @@
   <script>
     lucide.createIcons();
   </script>
+  <div id="mobile-menu"
+    class="hidden fixed inset-0 bg-black z-[9999] flex flex-col pt-24 px-8 space-y-8 animate-in fade-in duration-300">
+    <button id="mobile-menu-close" class="absolute top-6 right-6 text-white transition-colors">
+      <i data-lucide="x" class="w-10 h-10"></i>
+    </button>
+    <a href="index.html" class="text-left font-black text-5xl uppercase tracking-tighter text-primaryAccent">Home</a>
+    <a href="emergency.html" class="text-left font-black text-5xl uppercase tracking-tighter text-white">Emergency</a>
+    <a href="construction.html"
+      class="text-left font-black text-5xl uppercase tracking-tighter text-white">Construction</a>
+    <a href="about.html" class="text-left font-black text-5xl uppercase tracking-tighter text-white">About</a>
+    <a href="reviews.html" class="text-left font-black text-5xl uppercase tracking-tighter text-white">Reviews</a>
+    <a href="tel:(303) 882-3385"
+      class="w-full bg-primaryAccent text-black py-5 rounded-xl font-black text-center text-2xl mt-8">
+      (303) 882-3385
+    </a>
+  </div>
 </body>
 
 </html>

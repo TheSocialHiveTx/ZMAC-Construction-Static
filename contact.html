@@ -69,26 +69,6 @@
             </button>
         </div>
 
-        <!-- Mobile Nav Overlay -->
-        <div id="mobile-menu"
-            class="hidden md:hidden fixed inset-0 bg-black/98 backdrop-blur-2xl z-[100] flex flex-col pt-24 px-8 space-y-8">
-            <button id="mobile-menu-close"
-                class="absolute top-6 right-6 text-white/50 hover:text-white transition-colors">
-                <i data-lucide="x" class="w-8 h-8"></i>
-            </button>
-            <a href="index.html" class="text-left font-black text-6xl uppercase tracking-tighter text-white">Home</a>
-            <a href="emergency.html"
-                class="text-left font-black text-6xl uppercase tracking-tighter text-white">Emergency</a>
-            <a href="construction.html"
-                class="text-left font-black text-6xl uppercase tracking-tighter text-white">Construction</a>
-            <a href="about.html" class="text-left font-black text-6xl uppercase tracking-tighter text-white">About</a>
-            <a href="reviews.html"
-                class="text-left font-black text-6xl uppercase tracking-tighter text-white">Reviews</a>
-            <a href="tel:(303) 882-3385"
-                class="w-full bg-primaryAccent text-black py-5 rounded-xl font-black text-center text-2xl mt-8">
-                (303) 882-3385
-            </a>
-        </div>
     </header>
 
     <main class="bg-black">
@@ -107,7 +87,7 @@
                         Get In Touch
                     </span>
                     <h1
-                        class="text-6xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-white animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
+                        class="text-4xl sm:text-7xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8] text-white animate-in fade-in slide-in-from-bottom duration-1000 delay-200">
                         Start Now<span class="text-primaryAccent">.</span>
                     </h1>
                 </div>
@@ -269,6 +249,23 @@
     <script>
         lucide.createIcons();
     </script>
+    <div id="mobile-menu"
+        class="hidden fixed inset-0 bg-black z-[9999] flex flex-col pt-24 px-8 space-y-8 animate-in fade-in duration-300">
+        <button id="mobile-menu-close" class="absolute top-6 right-6 text-white transition-colors">
+            <i data-lucide="x" class="w-10 h-10"></i>
+        </button>
+        <a href="index.html" class="text-left font-black text-5xl uppercase tracking-tighter text-white">Home</a>
+        <a href="emergency.html"
+            class="text-left font-black text-5xl uppercase tracking-tighter text-white">Emergency</a>
+        <a href="construction.html"
+            class="text-left font-black text-5xl uppercase tracking-tighter text-white">Construction</a>
+        <a href="about.html" class="text-left font-black text-5xl uppercase tracking-tighter text-white">About</a>
+        <a href="reviews.html" class="text-left font-black text-5xl uppercase tracking-tighter text-white">Reviews</a>
+        <a href="tel:(303) 882-3385"
+            class="w-full bg-primaryAccent text-black py-5 rounded-xl font-black text-center text-2xl mt-8">
+            (303) 882-3385
+        </a>
+    </div>
 </body>
 
 </html>
