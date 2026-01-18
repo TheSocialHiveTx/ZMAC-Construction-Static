@@ -173,7 +173,7 @@
             </div>
           </div>
           <div class="lg:col-span-6 relative group overflow-hidden rounded-[4rem]">
-            <img src="https://images.unsplash.com/photo-1449156001931-82992a47279f?auto=format&fit=crop&q=80&w=1500"
+            <img src="images/ZMAX residential.jpg"
               class="w-full h-[400px] md:h-[600px] object-cover transition-transform duration-1000 group-hover:scale-110"
               alt="Elite Craft" />
             <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-all duration-500"></div>
@@ -195,7 +195,7 @@
           <!-- Card 1 -->
           <div onclick="openServiceModal('replacement')"
             class="group relative h-[400px] md:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer">
-            <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&q=80&w=1200"
+            <img src="images/ZMAX house.jpg"
               class="absolute inset-0 w-full h-[400px] md:h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               alt="Full Replacement" />
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
@@ -216,7 +216,7 @@
           <!-- Card 2 -->
           <div onclick="openServiceModal('emergency')"
             class="group relative h-[400px] md:h-[600px] rounded-[3rem] overflow-hidden cursor-pointer">
-            <img src="https://images.unsplash.com/photo-1595113316349-9fa4ee24f884?auto=format&fit=crop&q=80&w=1200"
+            <img src="images/Roof repairs hero.jpg"
               class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               alt="Emergency Help" />
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent"></div>
@@ -444,6 +444,39 @@
       (303) 882-3385
     </a>
   </div>
+
+  <div id="sticky-banner"
+    class="fixed bottom-0 left-0 right-0 z-[100] bg-primaryAccent py-4 px-6 flex justify-between items-center shadow-lg transform transition-transform duration-300 animate-pulse-slow">
+    <div class="flex items-center gap-4">
+      <span class="bg-black text-white text-[10px] font-black uppercase tracking-[0.2em] px-2 py-1 rounded">24/7
+        Emergency</span>
+      <p class="hidden md:block font-bold text-black uppercase tracking-widest text-xs">Priority Response Team Standby
+      </p>
+    </div>
+    <a href="tel:(303) 882-3385"
+      class="bg-black text-white px-6 py-2 rounded-full font-black text-xs uppercase tracking-widest hover:bg-white hover:text-black transition-all flex items-center gap-2">
+      <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+      Call Now
+    </a>
+  </div>
+
+  <style>
+    @keyframes pulse-slow {
+
+      0%,
+      100% {
+        background-color: #FFD700;
+      }
+
+      50% {
+        background-color: #F2CC00;
+      }
+    }
+
+    .animate-pulse-slow {
+      animation: pulse-slow 3s infinite;
+    }
+  </style>
 </body>
 
 </html>
