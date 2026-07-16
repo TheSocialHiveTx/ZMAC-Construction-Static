@@ -84,24 +84,48 @@ document.addEventListener('DOMContentLoaded', () => {
         revealElements.forEach(el => revealObserver.observe(el));
     }
 
-    // ---- Contact Form Handling ----
+    // ---- Contact Form Handling (Formspree) ----
+    const FORMSPREE_ENDPOINT = 'https://formspree.io/f/mzdndqpe';
+
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
+        contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerText;
             submitBtn.innerText = 'SENDING...';
             submitBtn.disabled = true;
 
-            setTimeout(() => {
-                const formContent = document.getElementById('form-content');
-                const successMessage = document.getElementById('form-success');
-                if (formContent && successMessage) {
-                    formContent.classList.add('hidden');
-                    successMessage.classList.remove('hidden');
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(FORMSPREE_ENDPOINT, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    const formContent = document.getElementById('form-content');
+                    const successMessage = document.getElementById('form-success');
+                    if (formContent && successMessage) {
+                        formContent.classList.add('hidden');
+                        successMessage.classList.remove('hidden');
+                    }
+                } else {
+                    const data = await response.json();
+                    const errorMsg = data.errors
+                        ? data.errors.map(err => err.message).join(', ')
+                        : 'Something went wrong. Please try again.';
+                    alert(errorMsg);
+                    submitBtn.innerText = originalText;
+                    submitBtn.disabled = false;
                 }
-            }, 800);
+            } catch (err) {
+                alert('Network error. Please check your connection and try again.');
+                submitBtn.innerText = originalText;
+                submitBtn.disabled = false;
+            }
         });
     }
 
